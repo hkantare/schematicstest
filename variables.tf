@@ -1,1 +1,3 @@
-variable "ssh_key" {}
+variable "ssh_key" {
+  default = "nadine"
+  }
