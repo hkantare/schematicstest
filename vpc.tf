@@ -1,5 +1,9 @@
 variable "ssh_key" {}
 
+provider "ibm" {
+     generation = 1
+}
+
 locals {
      BASENAME = "nadine" 
      ZONE     = "us-south-1"
