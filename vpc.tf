@@ -1,5 +1,3 @@
-variable "ssh_key" {}
-
 provider "ibm" {
      generation = 1
 }
