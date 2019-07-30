@@ -45,8 +45,8 @@ data ibm_is_ssh_key "ssh_key_id" {
   name = "${var.ssh_key}"
 }
 
-data ibm_resource_group "group” {
-  name = "default”
+data ibm_resource_group "group" {
+  name = "default"
 }
 
 resource ibm_is_instance "vsi1" {
