@@ -45,7 +45,7 @@ data ibm_is_ssh_key "ssh_key_id" {
   name = "${var.ssh_key}"
 }
 
-data "ibm_resource_group” "group” {
+data ibm_resource_group "group” {
   name = "default”
 }
 
