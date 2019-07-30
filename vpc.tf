@@ -6,7 +6,7 @@ provider "ibm" {
 
 locals {
      BASENAME = "nadine" 
-     ZONE     = "us-south-1"
+     ZONE     = "us-east-1"
    }
 
 resource ibm_is_vpc "vpc" {
