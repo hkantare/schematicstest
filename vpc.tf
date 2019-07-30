@@ -66,7 +66,7 @@ resource ibm_is_instance "vsi1" {
 
 resource ibm_is_floating_ip "fip1" {
   name   = "${local.BASENAME}-fip1"
-  resource_group_id = "${data.ibm_resource_group.group.id}”
+  resource_group_id = "${data.ibm_resource_group.group.id}"
   target = "${ibm_is_instance.vsi1.primary_network_interface.0.id}"
 }
 
