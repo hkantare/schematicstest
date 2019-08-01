@@ -6,14 +6,14 @@ provider "ibm" {
 
 locals {
      BASENAME = "harini" 
-     ZONE     = "us-south-1"
+     ZONE     = "us-east-1"
    }
 
 resource ibm_is_vpc "vpc" {
   name = "${local.BASENAME}-vpc"
 }
 
-resource ibm_is_security_group "sg1" {
+/*resource ibm_is_security_group "sg1" {
   name = "${local.BASENAME}-sg1"
   vpc  = "${ibm_is_vpc.vpc.id}"
 }
@@ -72,4 +72,4 @@ resource ibm_is_floating_ip "fip1" {
 
 output sshcommand {
   value = "ssh root@${ibm_is_floating_ip.fip1.address}"
-}
+}*/
