@@ -1,12 +1,12 @@
 variable "ssh_key" {}
 
 provider "ibm" {
-     generation = 1
+     generation = 2
 }
 
 locals {
      BASENAME = "harini" 
-     ZONE     = "us-east-1"
+     ZONE     = "us-south-1"
    }
 
 resource ibm_is_vpc "vpc" {
