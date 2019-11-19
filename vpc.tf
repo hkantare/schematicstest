@@ -7,7 +7,7 @@ provider "ibm" {
 
 locals {
      BASENAME = "harini" 
-     ZONE     = "us-south-1"
+     ZONE     = "us-south-3"
    }
 
 resource ibm_is_vpc "vpc" {
